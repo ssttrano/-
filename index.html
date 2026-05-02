@@ -48,7 +48,7 @@
                 <span class="header__online"><span class="online-dot"></span>Я на связи</span>
                 <a class="header-tel" href="tel:+79603166014">8 960-316-60-14</a>
             </div>
-            <button class="header__btn btn-callback" type="button">Заказать звонок</button>
+            <a class="header__btn btn-callback" href="tel:+79603166014">Позвонить</a>
             <div class="burger" id="burger">
                 <span class="burger__line"></span>
                 <span class="burger__line"></span>
@@ -85,7 +85,7 @@
                     <p class="hero__prefers-footer">С меня — чёткий договор, трезвые руки и персональная гарантия.</p>
                 </div>
                 <div class="hero__buttons">
-                    <a href="#" class="hero__btn hero__btn--primary btn-open-form">Заказать бесплатный выезд</a>
+                    <a href="tel:+79603166014" class="hero__btn hero__btn--primary btn-open-form">Заказать бесплатный выезд</a>
                     <a href="tel:+79603166014" class="hero__btn hero__btn--outline">
                         <svg width="22" height="22" style="margin-right:8px;"><use href="#icon-phone"/></svg>Позвонить
                     </a>
@@ -267,72 +267,527 @@
     <!-- Отзывы (слайдер) -->
     <section class="reviews section" id="reviews">
         <div class="container">
-            <h2 class="section-title">Отзывы наших клиентов</h2>
-            <div class="reviews__slider">
-                <div class="reviews__track" id="reviewsTrack">
-                    <div class="review-card"><div class="review-card__header"><img src="img/client-1.jpg" alt="Отзыв Ангелина Филатова" class="review-card__avatar"><div><p class="review-card__name">Ангелина Филатова</p><p class="review-card__location">с. Засечное</p></div></div><div class="review-card__stars">
-                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                    </div>
-                    <blockquote>«Залили вокруг дома отмостку. Работа выполнена в срок. Мне все понравилось. Необходимые инструменты все имелись. Цена не поменялась. Хорошие специалисты!»</blockquote></div>
-                    <div class="review-card"><div class="review-card__header"><img src="img/client-2.jpg" alt="Отзыв Danya Berkytov" class="review-card__avatar"><div><p class="review-card__name">Danya Berkytov</p><p class="review-card__location">Пенза</p></div></div>
-                    <div class="review-card__stars">
-                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                    </div>
-                    <blockquote>«Заказывали себе монтаж фасада из винилового сайдинга. Благодаря их работе дом выглядит как новый. Остались довольны работой. Результат получился отличный. Рекомендую»</blockquote></div>
-                    <div class="review-card"><div class="review-card__header"><img src="img/client-3.jpg" alt="Отзыв bestmarmar1" class="review-card__avatar"><div><p class="review-card__name">bestmarmar1</p><p class="review-card__location">Пенза</p></div></div>
-                    <div class="review-card__stars">
-                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                    </div>
-                    <blockquote>«Мы давно хотели поставить себе беседку, обратились к этому специалисту. Договорились по телефону, приехал на следующий день. Показал нам разные эскизы беседок. Мы выбрали, попросили сделать закупку сройматериала. Он все закупил и привез. После этого приступили к работе. Поставили красивую беседку. Получилось хорошее место для отдыха. Понравилось работать с этим специалистом. Спасибо!</blockquote></div>
-                    <div class="review-card"><div class="review-card__header"><img src="img/client-4.jpg" alt="Ольга" class="review-card__avatar"><div><p class="review-card__name">Наталия Касимова</p><p class="review-card__location">с. Богословка</p></div></div>
-                    <div class="review-card__stars">
-                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                    </div>
-                    <blockquote>«Довольны данным специалистом. Он занимался реконструкцией моего загородного дома. Учел все мои пожелания. Работу выполнил качественно, профессионально. Мы всем довольныю Рекомендую.»</blockquote></div>
-                    <div class="review-card"><div class="review-card__header"><img src="img/client-5.jpg" alt="Николай" class="review-card__avatar"><div><p class="review-card__name">Наталья Ш</p><p class="review-card__location">Пенза</p></div></div>
-                    <div class="review-card__stars">
-                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                    </div>
-                    <blockquote>«Работой бригады Артура довольна. Приятно удивлена скоростью выполнения и главное все красиво сделали. Ребята выполнили все пожелания. Молодцы!»</blockquote></div>
-                    <div class="review-card"><div class="review-card__header"><img src="img/client-6.jpg" alt="Марина" class="review-card__avatar"><div><p class="review-card__name">Радик Кафтаев</p><p class="review-card__location">г. Спутник</p></div></div>
-                    <div class="review-card__stars">
-                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                    </div>
-                    <blockquote>«Огромная благодарность Артуру и его бригаде за консультацию и проделанную работу. Высокий профессионализм, умение быстро и првильно решать поставленные задачи характеризуют данного специалиста. Подробно нас проконсультировал, ответил на все вопросы, составил план дальнейших действий, при этом очень вежлив и доброжелателен. Всем рекомендую данную Бригаду. Спасибо Артур!</blockquote></div>
+          <h2 class="section-title">Отзывы наших клиентов</h2>
+          <div class="reviews__slider">
+            <div class="reviews__track" id="reviewsTrack">
+              <!-- Отзыв 1 -->
+              <div class="review-card">
+                <div class="review-card__header">
+                  <img src="img/client-1.jpg" alt="Отзыв Ангелина Филатова" class="review-card__avatar">
+                  <div>
+                    <p class="review-card__name">Ангелина Филатова</p>
+                    <p class="review-card__location">08.02.2026</p>
+                  </div>
                 </div>
-                <button class="reviews__arrow reviews__arrow--left" id="reviewPrev" aria-label="Предыдущий отзыв">
-                    <svg width="24" height="24"><path fill="none" stroke="currentColor" stroke-width="2" d="M15 18l-6-6 6-6"/></svg>
-                </button>
-                <button class="reviews__arrow reviews__arrow--right" id="reviewNext" aria-label="Следующий отзыв">
-                    <svg width="24" height="24"><path fill="none" stroke="currentColor" stroke-width="2" d="M9 18l6-6-6-6"/></svg>
-                </button>
+                <div class="review-card__stars">
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <blockquote>«Залили вокруг дома отмостку. Работа выполнена в срок. Мне все понравилось. Необходимые инструменты все имелись. Цена не поменялась. Хорошие специалисты!»</blockquote>
+              </div>
+              <!-- Отзыв 2 -->
+              <div class="review-card">
+                <div class="review-card__header">
+                  <img src="img/client-2.jpg" alt="Отзыв Danya Berkytov" class="review-card__avatar">
+                  <div>
+                    <p class="review-card__name">Даниил Беркутов</p>
+                    <p class="review-card__location">10.03.2026</p>
+                  </div>
+                </div>
+                <div class="review-card__stars">
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <blockquote>«Заказывали себе монтаж фасада из винилового сайдинга. Благодаря их работе дом выглядит как новый. Остались довольны работой. Результат получился отличный. Рекомендую»</blockquote>
+              </div>
+              <!-- Отзыв 3 -->
+              <div class="review-card">
+                <div class="review-card__header">
+                  <img src="img/client-3.jpg" alt="Отзыв bestmarmar1" class="review-card__avatar">
+                  <div>
+                    <p class="review-card__name">Дмитрий Крамзин</p>
+                    <p class="review-card__location">08.01.2026</p>
+                  </div>
+                </div>
+                <div class="review-card__stars">
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <blockquote>«Мы давно хотели поставить себе беседку, обратились к этому специалисту. Договорились по телефону, приехал на следующий день. Показал нам разные эскизы беседок. Мы выбрали, попросили сделать закупку стройматериала. Он все закупил и привез. После этого приступили к работе. Поставили красивую беседку. Получилось хорошее место для отдыха. Понравилось работать с этим специалистом. Спасибо!»</blockquote>
+              </div>
+              <!-- Отзыв 4 -->
+              <div class="review-card">
+                <div class="review-card__header">
+                  <img src="img/client-4.jpg" alt="Наталия Касимова" class="review-card__avatar">
+                  <div>
+                    <p class="review-card__name">Наталия Касимова</p>
+                    <p class="review-card__location">06.02.2026</p>
+                  </div>
+                </div>
+                <div class="review-card__stars">
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <blockquote>«Довольны данным специалистом. Он занимался реконструкцией моего загородного дома. Учел все мои пожелания. Работу выполнил качественно, профессионально. Мы всем довольны. Рекомендую.»</blockquote>
+              </div>
+              <!-- Отзыв 5 -->
+              <div class="review-card">
+                <div class="review-card__header">
+                  <img src="img/client-5.jpg" alt="Наталья Ш" class="review-card__avatar">
+                  <div>
+                    <p class="review-card__name">Наталья Ш</p>
+                    <p class="review-card__location">04.12.2025</p>
+                  </div>
+                </div>
+                <div class="review-card__stars">
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <blockquote>«Работой бригады Артура довольна. Приятно удивлена скоростью выполнения и главное все красиво сделали. Ребята выполнили все пожелания. Молодцы!»</blockquote>
+              </div>
+              <!-- Отзыв 6 -->
+              <div class="review-card">
+                <div class="review-card__header">
+                  <img src="img/client-6.jpg" alt="Радик Кафтаев" class="review-card__avatar">
+                  <div>
+                    <p class="review-card__name">Артем Гарькаев</p>
+                    <p class="review-card__location">05.04.2025</p>
+                  </div>
+                </div>
+                <div class="review-card__stars">
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <blockquote>«Огромная благодарность Артуру и его бригаде за консультацию и проделанную работу. Высокий профессионализм, умение быстро и правильно решать поставленные задачи характеризуют данного специалиста. Подробно нас проконсультировал, ответил на все вопросы, составил план дальнейших действий, при этом очень вежлив и доброжелателен. Всем рекомендую данную бригаду. Спасибо, Артур!»</blockquote>
+              </div>
+              <!-- Отзыв 7 -->
+
+              <div class="review-card">
+                <div class="review-card__header">
+                  <img src="img/client-1.jpg" alt="Отзыв Ирина Сергеева" class="review-card__avatar">
+                  <div>
+                    <p class="review-card__name">Ирина Сергеева</p>
+                    <p class="review-card__location">12.04.2023</p>
+                  </div>
+                </div>
+                <div class="review-card__stars">
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <blockquote>«Дом стоит ровно, тепло внутри, все супер. Быстро построили, без лишних трат, качество на высоте»</blockquote>
+              </div>
+              <!-- Отзыв 8 -->
+
+              <div class="review-card">
+                <div class="review-card__header">
+                  <img src="img/client-1.jpg" alt="Отзыв Ирина Сергеева" class="review-card__avatar">
+                  <div>
+                    <p class="review-card__name">Александр</p>
+                    <p class="review-card__location">06.04.2025</p>
+                  </div>
+                </div>
+                <div class="review-card__stars">
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <blockquote>«Бригада работала аккуратно, все сделали профессионально, крыша теперь как новая»</blockquote>
+              </div>
+              <!-- Отзыв 9 -->
+
+              <div class="review-card">
+                <div class="review-card__header">
+                  <img src="img/client-1.jpg" alt="Отзыв Ирина Сергеева" class="review-card__avatar">
+                  <div>
+                    <p class="review-card__name">Анастасия</p>
+                    <p class="review-card__location">23.03.2026</p>
+                  </div>
+                </div>
+                <div class="review-card__stars">
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <blockquote>«Реконструкцию кровли выполнили качественно и в срок. Работали аккуратно, все этапы согласовывали. После себя оставили порядок, резуальтатом полностью довольна»</blockquote>
+              </div> 
+              <!-- Отзыв 10 -->
+
+              <div class="review-card">
+                <div class="review-card__header">
+                  <img src="img/client-1.jpg" alt="Отзыв Ирина Сергеева" class="review-card__avatar">
+                  <div>
+                    <p class="review-card__name">Пуршева Мария</p>
+                    <p class="review-card__location">11.11.2025</p>
+                  </div>
+                </div>
+                <div class="review-card__stars">
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <blockquote>«Все отлично, работы выполнены в срок, вежливые мастера и аккуратные, нареканий по работе выполненной нет, будем продолжать сотрудничество. Спасибо большое реомендую мастеров!»</blockquote>
+              </div>
+              <!-- Отзыв 11 -->
+
+              <div class="review-card">
+                <div class="review-card__header">
+                  <img src="img/client-1.jpg" alt="Отзыв Ирина Сергеева" class="review-card__avatar">
+                  <div>
+                    <p class="review-card__name">Евгения</p>
+                    <p class="review-card__location">11.05.2025</p>
+                  </div>
+                </div>
+                <div class="review-card__stars">
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <blockquote>«Работает отлично, со знанием дела. Перекрывал крышу, сделал все хорошо. Дает гарантию. Если что всегда можно связаться, приедет и поправит»</blockquote>
+              </div>
+              <!-- Отзыв 12 -->
+
+              <div class="review-card">
+                <div class="review-card__header">
+                  <img src="img/client-1.jpg" alt="Отзыв Ирина Сергеева" class="review-card__avatar">
+                  <div>
+                    <p class="review-card__name">Карина</p>
+                    <p class="review-card__location">28.02.2026</p>
+                  </div>
+                </div>
+                <div class="review-card__stars">
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <blockquote>«Я довольна их работой, строили нам каркасный склад, учли все наши просьбы, и сделали так как мы просили. Спасибо вам!»</blockquote>
+              </div>
+              <!-- Отзыв 13 -->
+
+              <div class="review-card">
+                <div class="review-card__header">
+                  <img src="img/client-1.jpg" alt="Отзыв Ирина Сергеева" class="review-card__avatar">
+                  <div>
+                    <p class="review-card__name">Георгий Манько</p>
+                    <p class="review-card__location">19.03.2024</p>
+                  </div>
+                </div>
+                <div class="review-card__stars">
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <blockquote>«Артур и его бригада всегда выполняют свои работу на все сто, никогда не разочаровывался в них!»</blockquote>
+              </div>
+              <!-- Отзыв 14 -->
+
+              <div class="review-card">
+                <div class="review-card__header">
+                  <img src="img/client-1.jpg" alt="Отзыв Ирина Сергеева" class="review-card__avatar">
+                  <div>
+                    <p class="review-card__name">Марина Чайкина</p>
+                    <p class="review-card__location">15.09.2025</p>
+                  </div>
+                </div>
+                <div class="review-card__stars">
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <blockquote>«Ребята большие молодцы, сделали работу в срок, качетсвено и за разумную цену, рекомендую»</blockquote>
+              </div>
+              <!-- Отзыв 15 -->
+
+              <div class="review-card">
+                <div class="review-card__header">
+                  <img src="img/client-1.jpg" alt="Отзыв Ирина Сергеева" class="review-card__avatar">
+                  <div>
+                    <p class="review-card__name">Наталья безрукова</p>
+                    <p class="review-card__location">11.05.2025</p>
+                  </div>
+                </div>
+                <div class="review-card__stars">
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <blockquote>«Обращались за бетонными работами, выполнили быстро и качественно, рекомендую»</blockquote>
+              </div>
+              <!-- Отзыв 16 -->
+
+              <div class="review-card">
+                <div class="review-card__header">
+                  <img src="img/client-1.jpg" alt="Отзыв Ирина Сергеева" class="review-card__avatar">
+                  <div>
+                    <p class="review-card__name">Михеева Кристина</p>
+                    <p class="review-card__location">07.01.2025</p>
+                  </div>
+                </div>
+                <div class="review-card__stars">
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <blockquote>«Делали пристройку к дому, результатом очень довольна! Всё прошло без задержек, качественно и аккуратно. Мастер учёл все пожелания, помог с выбором материалов. Теперь у нас дополнительное уютное пространство, которое полностью вписалось в общий стиль дома. Спасибо за отличную работу!»</blockquote>
+              </div>
+              <!-- Отзыв 17 -->
+
+              <div class="review-card">
+                <div class="review-card__header">
+                  <img src="img/client-1.jpg" alt="Отзыв Ирина Сергеева" class="review-card__avatar">
+                  <div>
+                    <p class="review-card__name">Орлов Павел</p>
+                    <p class="review-card__location">с. Засечное</p>
+                  </div>
+                </div>
+                <div class="review-card__stars">
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <blockquote>«Ребята учитывали все мои пожелания, а также дали полезные советы по уходу. После ремонта ощущаю уверенность в том, что дом защищен. Отличная услуга, рекомендую!»</blockquote>
+              </div>
+              <!-- Отзыв 18 -->
+
+              <div class="review-card">
+                <div class="review-card__header">
+                  <img src="img/client-1.jpg" alt="Отзыв Ирина Сергеева" class="review-card__avatar">
+                  <div>
+                    <p class="review-card__name">Денис Молчанов</p>
+                    <p class="review-card__location">05.10.2024</p>
+                  </div>
+                </div>
+                <div class="review-card__stars">
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <blockquote>«Процесс прошел гладко, без задержек и проблем. Мастера учли все мои пожелания и показали высокий уровень сервиса. Результат превзошел мои ожидания, и я полностью доволен. Спасибо за вашу отличную работу и за то, что сделали всё на высшем уровне.»</blockquote>
+              </div>
+              <!-- Отзыв 19 -->
+
+              <div class="review-card">
+                <div class="review-card__header">
+                  <img src="img/client-1.jpg" alt="Отзыв Ирина Сергеева" class="review-card__avatar">
+                  <div>
+                    <p class="review-card__name">Константин З.</p>
+                    <p class="review-card__location">06.07.2025</p>
+                  </div>
+                </div>
+                <div class="review-card__stars">
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <blockquote>«Очень качественная работа по заливке бетонного основания под парковку и въездную группу. Ребята знают свою работу, все сделано по уровню, качественно установлены бордюры на подготовленное основание. Ребята очень трудолюбивы и аккуратны в работе, рекомендую. Все работы сделаны по заранее оговоренной цене. Руководитель слово держит.»</blockquote>
+              </div>
+              <!-- Отзыв 20 -->
+
+              <div class="review-card">
+                <div class="review-card__header">
+                  <img src="img/client-1.jpg" alt="Отзыв Ирина Сергеева" class="review-card__avatar">
+                  <div>
+                    <p class="review-card__name">Дмитрий А.</p>
+                    <p class="review-card__location">10.09.2025</p>
+                  </div>
+                </div>
+                <div class="review-card__stars">
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <blockquote>«Данная бригада,нам очень понравилась.Нашли её,через яндекс.Договорились о начале работ.Бригада приехала,в назначенный день.Работу свою знают,много подсказывают,трудятся с утра,до позднего вечера.Рекомендую всем,опытная бригада и профессиональный руководитель.»</blockquote>
+              </div>
+              <!-- Отзыв 21 -->
+
+              <div class="review-card">
+                <div class="review-card__header">
+                  <img src="img/client-1.jpg" alt="Отзыв Ирина Сергеева" class="review-card__avatar">
+                  <div>
+                    <p class="review-card__name">Татьяна Хасянова</p>
+                    <p class="review-card__location">03.02.2026</p>
+                  </div>
+                </div>
+                <div class="review-card__stars">
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <blockquote>«Молодцы ребята, все сделали в срок и хорошо»</blockquote>
+              </div>
+              <!-- Отзыв 22 -->
+
+              <div class="review-card">
+                <div class="review-card__header">
+                  <img src="img/client-1.jpg" alt="Отзыв Ирина Сергеева" class="review-card__avatar">
+                  <div>
+                    <p class="review-card__name">Вадим Т.</p>
+                    <p class="review-card__location">17.06.2024</p>
+                  </div>
+                </div>
+                <div class="review-card__stars">
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <blockquote>«Необходим был косметический ремонт на даче. Обратился к Михаилу. С помощью тепловизора, он сделал обследование дома. Нашел ряд слабых мест, предложил варианты решения проблем. Заключили договор и после устранения дефектов, рабочие приступили к ремонту. Уложились в срок. К качеству работ претензий нет.»</blockquote>
+              </div>
+
+              <!-- Отзыв 23 -->
+
+              <div class="review-card">
+                <div class="review-card__header">
+                  <img src="img/client-1.jpg" alt="Отзыв Ирина Сергеева" class="review-card__avatar">
+                  <div>
+                    <p class="review-card__name">Иван С.</p>
+                    <p class="review-card__location">05.03.2026</p>
+                  </div>
+                </div>
+                <div class="review-card__stars">
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <blockquote>«Выбирал Артура, опираясь на отзывы. Работы велись по внутренней отделке дома:обновили пол,отшлифовали стены с последующей покраской. Результатом я доволен.Сохрано ваш контакт.Спасибо еще раз.»</blockquote>
+              </div>
+              <!-- Отзыв 24 -->
+
+              <div class="review-card">
+                <div class="review-card__header">
+                  <img src="img/client-1.jpg" alt="Отзыв Ирина Сергеева" class="review-card__avatar">
+                  <div>
+                    <p class="review-card__name">Михаил Сергеев</p>
+                    <p class="review-card__location">16.02.2025</p>
+                  </div>
+                </div>
+                <div class="review-card__stars">
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <blockquote>«Мастер своего дела!быстро,качественно. Спасибо Артур !!!!»</blockquote>
+              </div>
+
+              <!-- Отзыв 25 -->
+              <div class="review-card">
+                <div class="review-card__header">
+                  <img src="img/client-1.jpg" alt="Отзыв Ирина Сергеева" class="review-card__avatar">
+                  <div>
+                    <p class="review-card__name">Наталья</p>
+                    <p class="review-card__location">13.05.2025</p>
+                  </div>
+                </div>
+                <div class="review-card__stars">
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <blockquote>«Спасибо Артуру за качественную работу и короткий срок исполнения . Сделано качественно.Рекомендую»</blockquote>
+              </div>
+
+              <!-- Отзыв 26 -->
+              <div class="review-card">
+                <div class="review-card__header">
+                  <img src="img/client-1.jpg" alt="Отзыв Ирина Сергеева" class="review-card__avatar">
+                  <div>
+                    <p class="review-card__name">Сергей Казаков</p>
+                    <p class="review-card__location">04.11.2025</p>
+                  </div>
+                </div>
+                <div class="review-card__stars">
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <blockquote>«Отлично проделали работу , починили крышу -забор ещё много что по мелочи , родители довольны ! Артуру спасибо 🙏 быстро качественно ,цены адекватные 👍»</blockquote>
+              </div>
+              <!-- Отзыв 27 -->
+
+              <div class="review-card">
+                <div class="review-card__header">
+                  <img src="img/client-1.jpg" alt="Отзыв Ирина Сергеева" class="review-card__avatar">
+                  <div>
+                    <p class="review-card__name">Надежда</p>
+                    <p class="review-card__location">27.02.2026</p>
+                  </div>
+                </div>
+                <div class="review-card__stars">
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <blockquote>«Работой очень довольна! Всё сделали качественно и быстро за адекватную цену. В дальнейшем буду ещё обращаться к их услугам. Рекомендую!»</blockquote>
+              </div>   
             </div>
+            <button class="reviews__arrow reviews__arrow--left" id="reviewPrev" aria-label="Предыдущий отзыв">
+              <svg width="24" height="24"><path fill="none" stroke="currentColor" stroke-width="2" d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button class="reviews__arrow reviews__arrow--right" id="reviewNext" aria-label="Следующий отзыв">
+              <svg width="24" height="24"><path fill="none" stroke="currentColor" stroke-width="2" d="M9 18l6-6-6-6"/></svg>
+            </button>
+          </div>
         </div>
-    </section>
+      </section>
 
     <!-- Как мы работаем -->
     <section class="workflow section" id="workflow">
@@ -364,40 +819,23 @@
     </section>
 
     <!-- Контакты (переработанный) -->
-    <section class="contacts section" id="contacts">
+    <section class="cta section" id="final-cta">
         <div class="container">
-            <h2 class="section-title">Контакты и выезд</h2>
-            <div class="contacts__wrapper">
-                <div class="contacts__info">
-                    <div class="contact-cards">
-                        <div class="contact-card">
-                            <div class="contact-card__icon"><svg width="28" height="28"><use href="#icon-phone"/></svg></div>
-                            <div class="contact-card__text"><span>Телефон</span><a href="tel:+79603166014">8 960-316-60-14</a></div>
-                        </div>
-                        <div class="contact-card">
-                            <div class="contact-card__icon"><svg width="28" height="28"><use href="#icon-whatsapp"/></svg></div>
-                            <div class="contact-card__text"><span>WhatsApp</span><a href="https://wa.me/79603166014" target="_blank">Написать в WhatsApp</a></div>
-                        </div>
-                        <div class="contact-card">
-                            <div class="contact-card__icon"><svg width="28" height="28"><use href="#icon-telegram"/></svg></div>
-                            <div class="contact-card__text"><span>Telegram</span><a href="https://t.me/Artur_penza" target="_blank">@Artur_penza</a></div>
-                        </div>
-                    </div>
-                    <div class="contacts__map">
-                        <iframe src="https://yandex.ru/map-widget/v1/?ll=45.0108%2C53.1959&z=10&pt=45.0108,53.1959,pm2rdl&l=map" width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <form class="contacts__form" id="contactForm">
-                    <h3>Оставьте заявку</h3>
-                    <input type="text" name="name" placeholder="Ваше имя" required>
-                    <input type="tel" name="phone" placeholder="Телефон" class="phone-mask" required>
-                    <textarea name="message" placeholder="Что нужно сделать?" rows="3"></textarea>
-                    <button type="submit" class="btn btn--primary">Отправить заявку</button>
-                    <p class="form-note">Перезвоню за 5 минут</p>
-                </form>
-            </div>
+          <h2 class="section-title">Готовы обсудить проект?</h2>
+          <p class="cta__desc">
+            Позвоните — отвечаю в течение 5 минут. Выезжаю по Пензе и области, выезжаю во все районы.
+          </p>
+          <div class="cta__action">
+            <a href="tel:+79603166014" class="btn btn--primary cta__btn">
+              <svg width="20" height="20" style="margin-right:8px; vertical-align:middle;">
+                <use href="#icon-phone"/>
+              </svg>
+              Позвонить
+            </a>
+            <a href="tel:+79603166014" class="cta__phone-number">8 960-316-60-14</a>
+          </div>
         </div>
-    </section>
+      </section>
 </main>
 
 <footer class="footer">
@@ -416,13 +854,8 @@
             <svg width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="2" d="M6 6l12 12M6 18L18 6"/></svg>
         </button>
         <h3>Заказать бесплатный выезд</h3>
-        <form id="modalForm">
-            <input type="text" name="name" placeholder="Ваше имя" required>
-            <input type="tel" name="phone" placeholder="Телефон" class="phone-mask" required>
-            <textarea name="message" placeholder="Что нужно сделать?" rows="3"></textarea>
-            <button type="submit" class="btn btn--primary">Отправить</button>
-            <p class="form-note">Перезвоню за 5 минут</p>
-        </form>
+            <p class="margin-custom">Выезжаю бесплатно по Пензе и всем районам. На месте проведу диагностику и озвучу точную стоимость ремонта. Приедем в удобное для вас время!</p>
+            <a href="tel:+79603166014" class="btn btn--primary">Позовнить</a>
     </div>
 </div>
 
@@ -444,12 +877,12 @@
         <a href="tel:+79603166014" class="floating-contact__link">
             <svg width="20" height="20"><use href="#icon-phone"/></svg> Позвонить
         </a>
-        <a href="https://wa.me/79603166014" target="_blank" class="floating-contact__link">
+        <!-- <a href="https://wa.me/79603166014" target="_blank" class="floating-contact__link">
             <svg width="20" height="20"><use href="#icon-whatsapp"/></svg> WhatsApp
         </a>
         <a href="https://t.me/Artur_penza" target="_blank" class="floating-contact__link">
             <svg width="20" height="20"><use href="#icon-telegram"/></svg> Telegram
-        </a>
+        </a> -->
     </div>
 </div>
 
