@@ -464,6 +464,7 @@ textarea {
     height: 50px;
     border-radius: 50%;
     object-fit: cover;
+    display: none;
 }
 .review-card__name { font-weight: 700; }
 .review-card__location { font-size: 13px; opacity: 0.7; }
@@ -972,3 +973,109 @@ textarea {
     width: 100%; /* ширина одного слайда; если у вас несколько в ряд, скорректируйте */
     /* остальные ваши стили */
 }
+
+/* =========================================
+   FINAL CTA — «Готовы обсудить проект?»
+   ========================================= */
+   #final-cta {
+    background: var(--color-dark);
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Декоративный элемент для визуальной глубины */
+  #final-cta::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(255,140,0,0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  
+  .cta__desc {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #fff;
+    max-width: 550px;
+    margin: 0 auto 32px;
+  }
+  
+  .cta__action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Кнопка "Позвонить" */
+  .cta__btn.btn--primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px 40px;
+    border-radius: 100px;
+    background: #ff6b00;            /* яркий акцентный цвет */
+    color: #fff;
+    box-shadow: 0 8px 24px rgba(255,107,0,0.35);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    line-height: 1;
+  }
+  
+  .cta__btn.btn--primary:hover {
+    background: #e55d00;
+    box-shadow: 0 12px 32px rgba(255,107,0,0.45);
+    transform: translateY(-2px);
+  }
+  
+  .cta__btn.btn--primary:active {
+    transform: translateY(0);
+    box-shadow: 0 6px 18px rgba(255,107,0,0.35);
+  }
+  
+  /* Номер телефона (кликабельная строка) */
+  .cta__phone-number {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+  }
+  
+  .cta__phone-number:hover {
+    color: var(--color-primary);
+  }
+  
+  /* Адаптация под мобильные */
+  @media (max-width: 600px) {
+    #final-cta {
+      padding: 60px 20px;
+    }
+    
+    .cta__desc {
+      font-size: 16px;
+    }
+    
+    .cta__btn.btn--primary {
+      width: 100%;
+      padding: 16px 20px;
+      font-size: 17px;
+    }
+    
+    .cta__phone-number {
+      font-size: 24px;
+    }
+  }
+  .margin-custom{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
