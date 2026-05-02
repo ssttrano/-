@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Строительная бригада Пенза | Артур Артурович</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="js/portfolio.js" defer></script>
+</head>
+<body>
+
+<!-- SVG-спрайт (иконки без эмодзи) -->
+<svg style="display: none;" aria-hidden="true">
+    <symbol id="icon-check" viewBox="0 0 30 30">
+        <path d="M15 27.8c7 0 12.8-5.8 12.8-12.8 0-7-5.8-12.8-12.8-12.8S2.2 8 2.2 15s5.8 12.8 12.8 12.8zm-1.7-6.4c-.4 0-.7-.2-1.1-.6l-3.6-4.5a1.3 1.3 0 0 1 .7-2.1c.4 0 .7.1 1 .5l3 3.9 5.8-9.4a1.3 1.3 0 0 1 2 .4c0 .3-.2.6-.3.8l-6.4 10.1c-.3.4-.6.6-1.1.6z"/>
+    </symbol>
+    <!-- Иконка телефона (трубка) -->
+    <symbol id="icon-phone" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.08 4.18 2 2 0 0 1 4.08 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+    </symbol>
+    <!-- Иконка WhatsApp (упрощённо) -->
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+    </symbol>
+    <!-- Иконка Telegram -->
+    <symbol id="icon-telegram" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.96 1.25-5.54 3.66-.52.36-1 .53-1.42.52-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.41-.88.03-.24.37-.49 1.02-.74 3.98-1.73 6.63-2.87 7.96-3.42 3.79-1.58 4.58-1.85 5.09-1.86.11 0 .37.03.54.17.14.12.18.28.2.45-.01.06.01.24 0 .38z"/>
+    </symbol>
+    <!-- Иконка "плюс" для FAQ -->
+    <symbol id="icon-plus" viewBox="0 0 24 24">
+        <path stroke="currentColor" stroke-width="2" d="M12 5v14M5 12h14"/>
+    </symbol>
+</svg>
+
+<header class="header">
+    <div class="header__container container">
+        <div class="header__top">
+            <a href="/" class="header__logo" aria-label="Артур Артурович — на главную">
+                <span class="logo-name">Артур <span class="decor-color">Артурович</span></span>
+                <span class="logo-separator" aria-hidden="true">|</span>
+                <span class="logo-text">Строительные работы под ключ в Пензе</span>
+            </a>
+            <p class="header-plank">Возможен выезд сегодня</p>
+            <div class="header__contacts">
+                <span class="header__online"><span class="online-dot"></span>Я на связи</span>
+                <a class="header-tel" href="tel:+79603166014">8 960-316-60-14</a>
+            </div>
+            <button class="header__btn btn-callback" type="button">Заказать звонок</button>
+            <div class="burger" id="burger">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+            </div>
+        </div>
+        <nav class="header__nav" id="mainNav">
+            <ul class="header__nav-list">
+                <li><a href="#about">О бригаде</a></li>
+                <li><a href="#services">Услуги и цены</a></li>
+                <li><a href="#portfolio">Примеры работ</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+                <li><a href="#workflow">Ход работы</a></li>
+                <li><a href="#faq">Вопросы</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero__container container">
+            <div class="hero__column hero__content">
+                <div class="hero__plank"><span class="plank-dot"></span><p>Бригада свободна — готовы выехать!</p></div>
+                <h1 class="hero__title"><span>Строительная бригада</span><br> в Пензе</h1>
+                <p class="hero__description">Я Артур Артурович. Моя строительная бригада работает в Пензе и области — и я лично отвечаю за каждый объект.</p>
+                <div class="hero__prefers">
+                    <ul class="hero__prefer-list">
+                        <li><svg class="icon icon--white" width="30" height="30"><use href="#icon-check"/></svg><p>Бесплатный выезд по Пензе и области.</p></li>
+                        <li><svg class="icon icon--white" width="30" height="30"><use href="#icon-check"/></svg><p>Прозрачная смета за час</p></li>
+                        <li><svg class="icon icon--white" width="30" height="30"><use href="#icon-check"/></svg><p>Работаю со своим проверенным материалом или вашим — как скажете.</p></li>
+                    </ul>
+                    <p class="hero__prefers-footer">С меня — чёткий договор, трезвые руки и персональная гарантия.</p>
+                </div>
+                <div class="hero__buttons">
+                    <a href="#" class="hero__btn hero__btn--primary btn-open-form">Заказать бесплатный выезд</a>
+                    <a href="tel:+79603166014" class="hero__btn hero__btn--outline">
+                        <svg width="22" height="22" style="margin-right:8px;"><use href="#icon-phone"/></svg>Позвонить
+                    </a>
+                </div>
+                <p class="hero__info">Кровля, заборы, фундаменты, бани, сайдинг, отделка, хозпостройки и ещё 18 услуг — всё делаю с одной бригадой, без посредников, точно в срок.</p>
+            </div>
+            <div class="hero__column hero__media">
+                <img class="hero-img" src="img/Rectangle 12.jpg" alt="Артур Артурович — руководитель строительной бригады" loading="lazy">
+                <a class="hero__tel" href="tel:+79603166014"><span>Я на связи, звоните</span><span>8 960-316-60-14</span></a>
+                <div class="hero__side-prefers">
+                    <ul class="hero__side-list">
+                        <li><svg class="icon icon--green" width="30" height="30"><use href="#icon-check"/></svg><p>7 лет опыта в строительной отрасли</p></li>
+                        <li><svg class="icon icon--green" width="30" height="30"><use href="#icon-check"/></svg><p>Количество рабочих в бригаде 2–4 человека — определяется конкретными задачами объекта.</p></li>
+                        <li><svg class="icon icon--green" width="30" height="30"><use href="#icon-check"/></svg><p>Мой личный контроль и участие в работе</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Почему выбирают нас -->
+    <section class="why-us section" id="why-us">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают нас</h2>
+            <div class="why-us__grid">
+                <div class="why-us__card">
+                    <div class="why-us__icon-wrapper"><svg class="icon icon--green" width="40" height="40"><use href="#icon-check"/></svg></div>
+                    <h3>Без посредников</h3><p>Работаем со своим проверенным материалом. Ваши расходы снижаются до 30%.</p>
+                </div>
+                <div class="why-us__card">
+                    <div class="why-us__icon-wrapper"><svg class="icon icon--green" width="40" height="40"><use href="#icon-check"/></svg></div>
+                    <h3>Письменная гарантия</h3><p>От 1 года до 5 лет. Если возникнет недочёт – исправим за свой счёт.</p>
+                </div>
+                <div class="why-us__card">
+                    <div class="why-us__icon-wrapper"><svg class="icon icon--green" width="40" height="40"><use href="#icon-check"/></svg></div>
+                    <h3>Трезвая бригада</h3><p>Жёсткий запрет на алкоголь на объектах. Дорожим репутацией.</p>
+                </div>
+                <div class="why-us__card">
+                    <div class="why-us__icon-wrapper"><svg class="icon icon--green" width="40" height="40"><use href="#icon-check"/></svg></div>
+                    <h3>Соблюдение сроков</h3><p>Фиксируем в договоре. Никаких «завтраков».</p>
+                </div>
+                <div class="why-us__card">
+                    <div class="why-us__icon-wrapper"><svg class="icon icon--green" width="40" height="40"><use href="#icon-check"/></svg></div>
+                    <h3>Бесплатный выезд</h3><p>По Пензе и области – замер, консультация, точная смета – бесплатно.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section class="services section" id="services">
+        <div class="container">
+            <h2 class="section-title">Услуги и цены</h2>
+            <div class="services__grid">
+                <!-- 6 карточек в точности как в задании -->
+                <div class="service-card"><h3>Кровля</h3><p>Монтаж, ремонт, замена кровли. Металлочерепица, профлист, мягкая кровля.</p><span class="service-card__price">От 850 ₽/м²</span><div class="service-card__actions"><a href="#portfolio" class="service-card__link">Смотреть примеры</a><a href="tel:+79603166014" class="service-card__call">Позвонить</a></div></div>
+                <div class="service-card"><h3>Заборы и ограждения</h3><p>Профнастил, сетка-рабица, дерево, кирпичные столбы.</p><span class="service-card__price">От 1100 ₽/п.м.</span><div class="service-card__actions"><a href="#portfolio" class="service-card__link">Смотреть примеры</a><a href="tel:+79603166014" class="service-card__call">Позвонить</a></div></div>
+                <div class="service-card"><h3>Фундаменты и отмостка</h3><p>Ленточный, свайный, плитный. Опалубка, армирование, заливка.</p><span class="service-card__price">От 2500 ₽/м.п.</span><div class="service-card__actions"><a href="#portfolio" class="service-card__link">Смотреть примеры</a><a href="tel:+79603166014" class="service-card__call">Позвонить</a></div></div>
+                <div class="service-card"><h3>Бани и беседки</h3><p>Под ключ: от фундамента до отделки. Брус, каркас, дровница внутри.</p><span class="service-card__price">От 150 000 ₽</span><div class="service-card__actions"><a href="#portfolio" class="service-card__link">Смотреть примеры</a><a href="tel:+79603166014" class="service-card__call">Позвонить</a></div></div>
+                <div class="service-card"><h3>Сайдинг и наружная отделка</h3><p>Обшивка, утепление фасадов, покраска.</p><span class="service-card__price">От 600 ₽/м²</span><div class="service-card__actions"><a href="#portfolio" class="service-card__link">Смотреть примеры</a><a href="tel:+79603166014" class="service-card__call">Позвонить</a></div></div>
+                <div class="service-card"><h3>Хозпостройки и благоустройство</h3><p>Хозблок, туалет, укладка брусчатки, навесы.</p><span class="service-card__price">От 15 000 ₽</span><div class="service-card__actions"><a href="#portfolio" class="service-card__link">Смотреть примеры</a><a href="tel:+79603166014" class="service-card__call">Позвонить</a></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Скидка для тех, кому мы обязаны -->
+    <section class="discount section" id="discount-seniors">
+        <div class="container">
+            <div class="promo-card promo-card--heroes">
+                <div class="promo-card__content">
+                    <h2 class="promo-card__title">Скидка для тех, кому мы обязаны</h2>
+                    <p class="promo-card__text">С уважением к старшему поколению и героям. Пенсионерам и участникам СВО — специальная цена на все виды работ и материалов. Позвоните, я всё расскажу лично.</p>
+                    <a href="tel:+79603166014" class="promo-card__phone">8 960-316-60-14</a>
+                    <a href="tel:+79603166014" class="btn btn--primary promo-card__btn">
+                        <svg width="22" height="22" style="margin-right:8px;"><use href="#icon-phone"/></svg>Позвонить и узнать скидку
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Акция для новых клиентов -->
+    <!-- <section class="promo section" id="promo">
+        <div class="container">
+            <div class="promo-card promo-card--newclient">
+                <div class="promo-card__content">
+                    <h2 class="promo-card__title">Акция для новых клиентов</h2>
+                    <p class="promo-card__text">Только для тех, кто обратился впервые — <strong>скидка 10% на первый заказ</strong>. Просто скажите: <strong>«Хочу как новый клиент»</strong> при вызове мастера.</p>
+                    <p class="promo-card__validity">Акция действует до конца месяца. Успейте зафиксировать выгоду!</p>
+                    <a href="tel:+79603166014" class="btn btn--primary promo-card__btn">
+                        <svg width="22" height="22" style="margin-right:8px;"><use href="#icon-phone"/></svg>Позвонить и зафиксировать скидку
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Портфолио -->
+    <section class="portfolio section" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Фотографии наших работ</h2>
+            <div class="portfolio__filter">
+                <button class="portfolio__filter-btn active">Все работы</button>
+                <button class="portfolio__filter-btn">Постройка дома</button>
+                <button class="portfolio__filter-btn">Отделочные работы</button>
+                <button class="portfolio__filter-btn">Отмостка</button>
+                <button class="portfolio__filter-btn">Крыльцо</button>
+                <button class="portfolio__filter-btn">Кровля</button>
+                <button class="portfolio__filter-btn">Пристрой</button>
+                <button class="portfolio__filter-btn">Бани</button>
+                <button class="portfolio__filter-btn">Заборы</button>
+            </div>
+            <div class="portfolio__grid">
+                <div class="portfolio__item" data-category="Кровля, Отделочные работы"><img src="img/portfolio-1.jpg" alt="Работа 1" loading="lazy"></div>
+                <div class="portfolio__item" data-category="Кровля, Постройка дома"><img src="img/portfolio-2.jpg" alt="Работа 2" loading="lazy"></div>
+                <div class="portfolio__item" data-category="Отделочные работы"><img src="img/portfolio-3.jpg" alt="Работа 3" loading="lazy"></div>
+                <div class="portfolio__item" data-category="Отделочные работы"><img src="img/portfolio-4.jpg" alt="Работа 4" loading="lazy"></div>
+                <div class="portfolio__item" data-category="Отмостка"><img src="img/portfolio-5.jpg" alt="Работа 5" loading="lazy"></div>
+                <div class="portfolio__item" data-category="Кровля"><img src="img/portfolio-6.jpg" alt="Работа 6" loading="lazy"></div>
+                <div class="portfolio__item" data-category="Бани"><img src="img/portfolio-7.jpg" alt="Работа 7" loading="lazy"></div>
+                <div class="portfolio__item" data-category="Кровля, Постройка дома"><img src="img/portfolio-8.jpg" alt="Работа 8" loading="lazy"></div>
+                <div class="portfolio__item" data-category="Беседки"><img src="img/portfolio-9.jpg" alt="Работа 9" loading="lazy"></div>
+                <div class="portfolio__item" data-category="Отделка"><img src="img/portfolio-11.jpg" alt="Работа 10" loading="lazy"></div>
+                <div class="portfolio__item" data-category="Заборы"><img src="img/portfolio-12.jpg" alt="Работа 10" loading="lazy"></div>
+                <div class="portfolio__item" data-category="Кровля"><img src="img/portfolio-13.jpg" alt="Работа 10" loading="lazy"></div>
+                <div class="portfolio__item" data-category="Отмостка"><img src="img/portfolio-14.jpg" alt="Работа 10" loading="lazy"></div>
+                <div class="portfolio__item" data-category="Отделка, Кровля"><img src="img/portfolio-15.jpg" alt="Работа 10" loading="lazy"></div>
+                <div class="portfolio__item" data-category="Бани"><img src="img/portfolio-16.jpg" alt="Работа 10" loading="lazy"></div>
+                <div class="portfolio__item" data-category="Постройка дома, Кровля"><img src="img/portfolio-17.jpg" alt="Работа 10" loading="lazy"></div>
+                <div class="portfolio__item" data-category="Отделка, Отмостка"><img src="img/portfolio-18.jpg" alt="Работа 10" loading="lazy"></div>
+                <div class="portfolio__item" data-category="Кровля"><img src="img/portfolio-19.jpg" alt="Работа 10" loading="lazy"></div>
+                <div class="portfolio__item" data-category="Пристрой, Кровля"><img src="img/portfolio-20.jpg" alt="Работа 10" loading="lazy"></div>
+                <div class="portfolio__item" data-category="Кровля"><img src="img/portfolio-21.jpg" alt="Работа 10" loading="lazy"></div>
+                <div class="portfolio__item" data-category="Кровля, Отделка"><img src="img/portfolio-22.jpg" alt="Работа 10" loading="lazy"></div>
+                <div class="portfolio__item" data-category="Кровля, Отделка"><img src="img/portfolio-23.jpg" alt="Работа 10" loading="lazy"></div>
+                <div class="portfolio__item" data-category="Постройка дома"><img src="img/portfolio-24.jpg" alt="Работа 10" loading="lazy"></div>
+                <div class="portfolio__item" data-category="Отмостка, Отделка"><img src="img/portfolio-25.jpg" alt="Работа 10" loading="lazy"></div>
+                <div class="portfolio__item" data-category="Заборы"><img src="img/diploma.webp" alt="Работа 10" loading="lazy"></div>
+                <div class="portfolio__item" data-category="Крыльцо"><img src="img/krilco.webp" alt="Работа 10" loading="lazy"></div>
+            </div>
+            <div class="portfolio__load-more">
+                <button class="btn btn--outline portfolio__load-more-btn">Загрузить ещё</button>
+            </div>
+            <div class="portfolio__call">
+                <a href="#" class="btn btn--outline portfolio__call-btn">Позвонить</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Об Артуре Артуровиче -->
+    <section class="about section" id="about">
+        <div class="container about__container">
+            <div class="about__photo">
+                <img src="img/Rectangle 12.jpg" alt="Артур Артурович" loading="lazy">
+            </div>
+            <div class="about__text">
+                <h2>О бригаде</h2>
+                <p>Меня зовут Артур Артурович. Я занимаюсь строительством более 10 лет. Моя бригада — это мастера, с которыми я работаю годами: непьющие, ответственные, с золотыми руками.</p>
+                <p>Я лично выезжаю на объект, составляю смету и контролирую каждый этап. Для меня важно, чтобы вам не пришлось переделывать, краснеть перед соседями или сожалеть о выборе. Поэтому мы даём письменную гарантию, не пропадаем после получения денег и сдаём объекты точно в срок.</p>
+                <p>Позвоните мне напрямую: <a href="tel:+79603166014">8 960-316-60-14</a>. Я отвечу на все вопросы без менеджеров-посредников.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Гарантии -->
+    <section class="guarantees section" id="guarantees">
+        <div class="container">
+            <h2 class="section-title">Гарантии и ответственность</h2>
+            <div class="guarantees__grid">
+                <div class="guarantee-item"><h3>Официальный договор</h3><p>Все условия, сроки и стоимость зафиксированы.</p></div>
+                <div class="guarantee-item"><h3>Без скрытых платежей</h3><p>Смета окончательная, изменения только с вашего согласия.</p></div>
+                <div class="guarantee-item"><h3>Свой материал</h3><p>Работаем с проверенными базами, даём чеки на материалы. Можете использовать и ваш материал — без проблем.</p></div>
+                <div class="guarantee-item"><h3>Гарантия на работы</h3><p>От 12 месяцев (отделка) до 5 лет (кровля, фундамент). Указана прямо в договоре.</p></div>
+                <div class="guarantee-item"><h3>Бесплатный выезд</h3><p>В пределах Пензы и 100 км вокруг – не берём денег за дорогу и осмотр.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы (слайдер) -->
+    <section class="reviews section" id="reviews">
+        <div class="container">
+            <h2 class="section-title">Отзывы наших клиентов</h2>
+            <div class="reviews__slider">
+                <div class="reviews__track" id="reviewsTrack">
+                    <div class="review-card"><div class="review-card__header"><img src="img/client-1.jpg" alt="Отзыв Ангелина Филатова" class="review-card__avatar"><div><p class="review-card__name">Ангелина Филатова</p><p class="review-card__location">с. Засечное</p></div></div><div class="review-card__stars">
+                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <blockquote>«Залили вокруг дома отмостку. Работа выполнена в срок. Мне все понравилось. Необходимые инструменты все имелись. Цена не поменялась. Хорошие специалисты!»</blockquote></div>
+                    <div class="review-card"><div class="review-card__header"><img src="img/client-2.jpg" alt="Отзыв Danya Berkytov" class="review-card__avatar"><div><p class="review-card__name">Danya Berkytov</p><p class="review-card__location">Пенза</p></div></div>
+                    <div class="review-card__stars">
+                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <blockquote>«Заказывали себе монтаж фасада из винилового сайдинга. Благодаря их работе дом выглядит как новый. Остались довольны работой. Результат получился отличный. Рекомендую»</blockquote></div>
+                    <div class="review-card"><div class="review-card__header"><img src="img/client-3.jpg" alt="Отзыв bestmarmar1" class="review-card__avatar"><div><p class="review-card__name">bestmarmar1</p><p class="review-card__location">Пенза</p></div></div>
+                    <div class="review-card__stars">
+                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <blockquote>«Мы давно хотели поставить себе беседку, обратились к этому специалисту. Договорились по телефону, приехал на следующий день. Показал нам разные эскизы беседок. Мы выбрали, попросили сделать закупку сройматериала. Он все закупил и привез. После этого приступили к работе. Поставили красивую беседку. Получилось хорошее место для отдыха. Понравилось работать с этим специалистом. Спасибо!</blockquote></div>
+                    <div class="review-card"><div class="review-card__header"><img src="img/client-4.jpg" alt="Ольга" class="review-card__avatar"><div><p class="review-card__name">Наталия Касимова</p><p class="review-card__location">с. Богословка</p></div></div>
+                    <div class="review-card__stars">
+                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <blockquote>«Довольны данным специалистом. Он занимался реконструкцией моего загородного дома. Учел все мои пожелания. Работу выполнил качественно, профессионально. Мы всем довольныю Рекомендую.»</blockquote></div>
+                    <div class="review-card"><div class="review-card__header"><img src="img/client-5.jpg" alt="Николай" class="review-card__avatar"><div><p class="review-card__name">Наталья Ш</p><p class="review-card__location">Пенза</p></div></div>
+                    <div class="review-card__stars">
+                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <blockquote>«Работой бригады Артура довольна. Приятно удивлена скоростью выполнения и главное все красиво сделали. Ребята выполнили все пожелания. Молодцы!»</blockquote></div>
+                    <div class="review-card"><div class="review-card__header"><img src="img/client-6.jpg" alt="Марина" class="review-card__avatar"><div><p class="review-card__name">Радик Кафтаев</p><p class="review-card__location">г. Спутник</p></div></div>
+                    <div class="review-card__stars">
+                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="gold" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <blockquote>«Огромная благодарность Артуру и его бригаде за консультацию и проделанную работу. Высокий профессионализм, умение быстро и првильно решать поставленные задачи характеризуют данного специалиста. Подробно нас проконсультировал, ответил на все вопросы, составил план дальнейших действий, при этом очень вежлив и доброжелателен. Всем рекомендую данную Бригаду. Спасибо Артур!</blockquote></div>
+                </div>
+                <button class="reviews__arrow reviews__arrow--left" id="reviewPrev" aria-label="Предыдущий отзыв">
+                    <svg width="24" height="24"><path fill="none" stroke="currentColor" stroke-width="2" d="M15 18l-6-6 6-6"/></svg>
+                </button>
+                <button class="reviews__arrow reviews__arrow--right" id="reviewNext" aria-label="Следующий отзыв">
+                    <svg width="24" height="24"><path fill="none" stroke="currentColor" stroke-width="2" d="M9 18l6-6-6-6"/></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Как мы работаем -->
+    <section class="workflow section" id="workflow">
+        <div class="container">
+            <h2 class="section-title">Как мы работаем</h2>
+            <div class="workflow__steps">
+                <div class="workflow__step"><div class="workflow__step-number">1</div><h3>Звонок или заявка</h3><p>Описываете задачу. Я перезваниваю в течение 5 минут.</p></div>
+                <div class="workflow__step"><div class="workflow__step-number">2</div><h3>Бесплатный выезд и замер</h3><p>В удобное для вас время. Делаем точные замеры, обсуждаем материалы.</p></div>
+                <div class="workflow__step"><div class="workflow__step-number">3</div><h3>Смета и договор</h3><p>Вы получаете полный расчёт и фиксированные условия.</p></div>
+                <div class="workflow__step"><div class="workflow__step-number">4</div><h3>Закупка материала/подготовка</h3><p>Привозим всё своё либо согласовываем ваш материал.</p></div>
+                <div class="workflow__step"><div class="workflow__step-number">5</div><h3>Строительство/ремонт</h3><p>Работаем аккуратно, с ежедневной уборкой.</p></div>
+                <div class="workflow__step"><div class="workflow__step-number">6</div><h3>Сдача объекта и гарантия</h3><p>Подписываем акт, вручаем гарантийный талон.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq section" id="faq">
+        <div class="container">
+            <h2 class="section-title">Вопросы и ответы</h2>
+            <div class="faq__list">
+                <details class="faq__item"><summary>Не пропадут ли рабочие после предоплаты?</summary><p>Мы работаем официально, заключаем договор. Вы платите поэтапно только за фактически выполненную работу. Репутация в Пензе для нас дороже сиюминутной выгоды.</p></details>
+                <details class="faq__item"><summary>А вдруг приедут пьяные мастера?</summary><p>В моей бригаде алкоголь на объекте под строжайшим запретом. Это правило не обсуждается. При первой встрече вы лично убедитесь, что мы трезвы и настроены на работу.</p></details>
+                <details class="faq__item"><summary>Точно уложитесь в бюджет, не вылезут ли скрытые платежи?</summary><p>Смета фиксируется до начала работ. Если в процессе не возникнет ваших дополнительных пожеланий, цена не изменится ни на копейку.</p></details>
+                <details class="faq__item"><summary>Как быстро начнёте?</summary><p>Обычно приступаем через 1–3 дня после подписания договора. Если нужно срочно – обсудим, часто входим в положение и выводим бригаду на следующий день.</p></details>
+                <details class="faq__item"><summary>Даёте ли гарантию? И что она покрывает?</summary><p>Да, от года до пяти лет. Если по нашей вине что-то треснуло, просело, отошло – переделаем за свой счёт. Гарантия прописана в договоре.</p></details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты (переработанный) -->
+    <section class="contacts section" id="contacts">
+        <div class="container">
+            <h2 class="section-title">Контакты и выезд</h2>
+            <div class="contacts__wrapper">
+                <div class="contacts__info">
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-card__icon"><svg width="28" height="28"><use href="#icon-phone"/></svg></div>
+                            <div class="contact-card__text"><span>Телефон</span><a href="tel:+79603166014">8 960-316-60-14</a></div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card__icon"><svg width="28" height="28"><use href="#icon-whatsapp"/></svg></div>
+                            <div class="contact-card__text"><span>WhatsApp</span><a href="https://wa.me/79603166014" target="_blank">Написать в WhatsApp</a></div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card__icon"><svg width="28" height="28"><use href="#icon-telegram"/></svg></div>
+                            <div class="contact-card__text"><span>Telegram</span><a href="https://t.me/Artur_penza" target="_blank">@Artur_penza</a></div>
+                        </div>
+                    </div>
+                    <div class="contacts__map">
+                        <iframe src="https://yandex.ru/map-widget/v1/?ll=45.0108%2C53.1959&z=10&pt=45.0108,53.1959,pm2rdl&l=map" width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <form class="contacts__form" id="contactForm">
+                    <h3>Оставьте заявку</h3>
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                    <input type="tel" name="phone" placeholder="Телефон" class="phone-mask" required>
+                    <textarea name="message" placeholder="Что нужно сделать?" rows="3"></textarea>
+                    <button type="submit" class="btn btn--primary">Отправить заявку</button>
+                    <p class="form-note">Перезвоню за 5 минут</p>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer__container">
+        <p>&copy; 2025 Артур Артурович – строительная бригада в Пензе.</p>
+        <p>Телефон: <a href="tel:+79603166014">8 960-316-60-14</a></p>
+        <p class="footer__disclaimer">Информация на сайте не является публичной офертой. Цены и условия уточняйте при замере.</p>
+    </div>
+</footer>
+
+<!-- Модальное окно -->
+<div class="modal" id="formModal">
+    <div class="modal__overlay"></div>
+    <div class="modal__window">
+        <button class="modal__close" id="modalClose" aria-label="Закрыть окно">
+            <svg width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="2" d="M6 6l12 12M6 18L18 6"/></svg>
+        </button>
+        <h3>Заказать бесплатный выезд</h3>
+        <form id="modalForm">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="tel" name="phone" placeholder="Телефон" class="phone-mask" required>
+            <textarea name="message" placeholder="Что нужно сделать?" rows="3"></textarea>
+            <button type="submit" class="btn btn--primary">Отправить</button>
+            <p class="form-note">Перезвоню за 5 минут</p>
+        </form>
+    </div>
+</div>
+
+<!-- Мобильная фиксированная панель -->
+<div class="mobile-fixed-bar">
+    <a href="tel:+79603166014" class="fixed-btn fixed-btn--call">
+        <svg width="20" height="20"><use href="#icon-phone"/></svg>
+        Позвонить
+    </a>
+    <a href="#" class="fixed-btn fixed-btn--order btn-open-form">Бесплатный выезд</a>
+</div>
+
+<!-- Десктопная плавающая кнопка связи -->
+<div class="floating-contact" id="floatingContact">
+    <button class="floating-contact__toggle" id="floatingToggle">
+        <svg width="26" height="26"><use href="#icon-phone"/></svg>
+    </button>
+    <div class="floating-contact__dropdown" id="floatingDropdown">
+        <a href="tel:+79603166014" class="floating-contact__link">
+            <svg width="20" height="20"><use href="#icon-phone"/></svg> Позвонить
+        </a>
+        <a href="https://wa.me/79603166014" target="_blank" class="floating-contact__link">
+            <svg width="20" height="20"><use href="#icon-whatsapp"/></svg> WhatsApp
+        </a>
+        <a href="https://t.me/Artur_penza" target="_blank" class="floating-contact__link">
+            <svg width="20" height="20"><use href="#icon-telegram"/></svg> Telegram
+        </a>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
